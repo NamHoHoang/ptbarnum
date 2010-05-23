@@ -1,0 +1,34 @@
+<br/>
+<br/>
+<%@projects.each do |project|%>
+  <b><%=project.name%></b>
+  <hr>
+  <table border="1">
+  <tr>
+    <td><b>Name</b>
+    </td>
+    <td><b>Description</b>
+    </td>
+    <td><b>Type</b>
+    </td>
+    <td><b>Current State</b>
+    </td>
+    <td><b>Requested by</b>
+    </td>
+  </tr>
+  <%@stories[project.id].each do |story|%>
+    <tr>
+    <td><%=story.name%>
+    </td>
+    <td><%=story.description%>
+    </td>
+    <td><%=story.story_type%>
+    </td>
+    <td><%=story.current_state%>
+    </td>
+    <td><%=story.requested_by%>
+    </td>
+    </tr>
+  <%end%>
+  </table>
+<%end%>

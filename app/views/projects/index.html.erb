@@ -1,0 +1,14 @@
+<br/>
+<br/>
+<div class="container grid_4 omega">
+  <h3>My Projects</h3>
+  <ul class="project_list">
+    <%@projects.each do |project|%>
+    <li>
+      <%=link_to project.name,project_path(project.id)%>
+    </li>
+    <%end%>
+  </ul>
+</div>
+  <div class="content grid_7 suffix_1 alpha">
+  </div>

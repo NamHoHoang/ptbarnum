@@ -1,0 +1,14 @@
+<br/>
+<br/>
+<div class="container grid_4 omega">
+  <h3><%=@project.name%>'s members</h3>
+  <ul class="project_list">
+    <%@members.each do |member|%>
+    <li>
+      <%=member.name%>
+    </li>
+    <%end%>
+  </ul>
+</div>
+  <div class="content grid_7 suffix_1 alpha">
+  </div>

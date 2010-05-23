@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html><head>        <title>PTbarnum</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <%= stylesheet_link_tag 'reset-min.css'%>
+    <%= stylesheet_link_tag '960.css'%>
+    <%= stylesheet_link_tag 'site.css'%>
+      <!--[if IE 7 ]>
+        
+    <%= stylesheet_link_tag 'ie7.css'%>
+      <![endif]-->
+<div id="header">
+  <div id="top_brand">
+  <h2><%= link_to 'ptbarnum', '/' %></h2>
+  <h3></h3>
+  </div>
+  <ul class="navigation">
+    <% if logged_in?%>
+    <li id="logged_in_as">
+      Logged in as <%=current_user.email%>
+    </li>
+    <li>
+      <%= link_to 'People', users_path %>
+    </li>
+    <li>
+      <%= link_to 'Projects', projects_path %>
+    </li>
+    <li>
+      <%= link_to 'Workload', stories_path %>
+    </li>
+    <li>
+      <a href="/help">Help</a>
+    </li>
+    <li>
+      <%= link_to 'Logout', logout_path %>
+    </li>
+    <% else %>
+    <li>
+      <a href="/help">Help</a>
+    </li>
+    <li>
+      <a href="/">Login</a>
+    </li>
+    <%end%>
+  </ul>
+</div>
+<div class="container_12 clearfix" id="body"><div id="status">Status message.</div>
+  <%= yield %>
+</div>
+<!--
+<div style="margin-top: auto;" id="footer">
+</div>
+-->
+</body>
+</html>

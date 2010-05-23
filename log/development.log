@@ -1,0 +1,3408 @@
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-05-20 22:00:27) [GET]
+
+NameError (uninitialized constant ApplicationController::AuthenticatedSystem):
+  app/controllers/application_controller.rb:6
+  app/controllers/sessions_controller.rb:2
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2010-05-20 22:00:34) [GET]
+
+NameError (uninitialized constant ApplicationController::AuthenticatedSystem):
+  app/controllers/application_controller.rb:6
+  app/controllers/sessions_controller.rb:2
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2010-05-20 22:05:29) [GET]
+
+NameError (uninitialized constant ApplicationController::AuthenticatedSystem):
+  app/controllers/application_controller.rb:6
+  app/controllers/sessions_controller.rb:2
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:14:52) [GET]
+Rendered sessions/_signin (32.0ms)
+Completed in 94ms (View: 79, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:14) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:17) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:18) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:30) [GET]
+Rendered sessions/_signin (15.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:30) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:44) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:44) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:44) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:15:45) [GET]
+Rendered sessions/_signin (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:03) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:04) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:04) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:04) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:24) [GET]
+Rendered sessions/_signin (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:25) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:16:25) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:18:09) [GET]
+Rendered sessions/_signin (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:19:16) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:21:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:21:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:22:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:22:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:23:18) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:23:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:23:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:23:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:24:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:24:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:34:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:34:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:48:19) [GET]
+
+NameError (uninitialized constant SessionsController::PivotalTracker):
+  app/controllers/sessions_controller.rb:6:in `new'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-05-20 22:48:50) [GET]
+
+MissingSourceFile (no such file to load -- PivotalTracker):
+  app/controllers/sessions_controller.rb:2
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:49:25) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient.rb:72:in `post'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/client.rb:13:in `token'
+  app/controllers/sessions_controller.rb:7:in `new'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:52:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1656ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:52:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:54:47) [GET]
+
+NoMethodError (undefined method `Project' for PivotalTracker::Client:Class):
+  app/controllers/sessions_controller.rb:8:in `new'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:54:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 2156ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:55:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:55:26) [GET]
+
+NoMethodError (undefined method `put' for #<SessionsController:0x4a47e74>):
+  app/controllers/sessions_controller.rb:9:in `new'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 22:55:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 2062ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 22:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-05-20 23:08:37) [GET]
+
+SyntaxError (E:/projects/ptbarnum/app/controllers/sessions_controller.rb:41: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:09:12) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:09:43) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:09:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2010-05-20 23:09:50) [POST]
+  Parameters: {"password"=>"1", "email"=>"bhanugsm@gmail.com"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2010-05-20 23:11:29) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, logged_in?, new, and newpass):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:11:34) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+ERROR: compiling _run_erb_app47views47sessions47new46html46erb RAISED compile error
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:8: syntax error, unexpected ')'
+...at((form_for :sessions do |f|).to_s); @output_buffer.concat ...
+                              ^
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:26: syntax error, unexpected kENSURE, expecting ')'
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:28: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47sessions47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+unless flash[:login_error].nil?; @output_buffer.concat "\n"
+@output_buffer.concat "<div id=\"errorExplanation\">"; @output_buffer.concat((flash[:login_error]).to_s); @output_buffer.concat "</div>\n"
+end; @output_buffer.concat "\n"
+@output_buffer.concat "<div class=\"container grid_4 omega\">\n"
+@output_buffer.concat "    <h3>Sign in</h3>\n"
+@output_buffer.concat "    "; @output_buffer.concat((form_for :sessions do |f|).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    <ul>\n"
+@output_buffer.concat "      <li>\n"
+@output_buffer.concat "        <label>Tracker Username or Email</label><br>\n"
+@output_buffer.concat "        <input name=\"email\" type=\"text\">\n"
+@output_buffer.concat "      </li>\n"
+@output_buffer.concat "      <li>\n"
+@output_buffer.concat "        <label>Password</label><br>\n"
+@output_buffer.concat "        <input name=\"password\" type=\"password\">\n"
+@output_buffer.concat "      </li>\n"
+@output_buffer.concat "      <li>\n"
+@output_buffer.concat "        <input value=\"Sign in\" type=\"submit\">\n"
+@output_buffer.concat "      </li>\n"
+@output_buffer.concat "    </ul>\n"
+@output_buffer.concat "    "; end; @output_buffer.concat "\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "  <div class=\"content grid_7 suffix_1 alpha\">\n"
+@output_buffer.concat "  </div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: E:/projects/ptbarnum/app/views/sessions/new.html.erb:28:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:8: syntax error, unexpected ')'
+...at((form_for :sessions do |f|).to_s); @output_buffer.concat ...
+                              ^
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:26: syntax error, unexpected kENSURE, expecting ')'
+E:/projects/ptbarnum/app/views/sessions/new.html.erb:28: syntax error, unexpected kEND, expecting ')') on line #8 of app/views/sessions/new.html.erb:
+5: <%end%>
+6: <div class="container grid_4 omega">
+7:     <h3>Sign in</h3>
+8:     <%=form_for :sessions do |f|%>
+9:     <ul>
+10:       <li>
+11:         <label>Tracker Username or Email</label><br>
+
+    app/views/sessions/new.html.erb:28:in `compile!'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:12:41) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:12:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:13:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:13:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:14:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:14:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2010-05-20 23:14:38) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"bhanugsm@gmail.com"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, logged_in?, new, and newpass):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:15:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:15:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:15:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/transparent_gray.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:15:47) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"bhanugsm@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:15:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:16:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:16:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:16:20) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"bhanugsm@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1406ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:16:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:16:55) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanugsm@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1328ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:16:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:17:14) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanugsm@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1375ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:17:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:17:36) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1422ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:17:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:18:32) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1375ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:18:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:20:04) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (32.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/sessions_controller.rb:18:in `format'
+  app/controllers/sessions_controller.rb:18:in `create'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:21:01) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+Redirected to http://localhost:3000/projects
+Completed in 1375ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:21:03) [GET]
+
+ActionController::RoutingError (No route matches "/projects" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2010-05-20 23:24:28) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, logged_in?, new, and newpass):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:24:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:24:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:24:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:24:58) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"params[:email]"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1453ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:25:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:25:09) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:25:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:25:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:25:26) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"123qwe", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1421ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:25:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:25:41) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+
+NameError (undefined local variable or method `projects_path' for #<SessionsController:0x4a72dcc>):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:33:23) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+Redirected to http://localhost:3000/projects
+Completed in 1390ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:33:25) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 750ms (View: 203, DB: 0) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:33:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:35:58) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects</h3>
+5:   <ul class="project_list">
+6:     <%@projects.each do |project|%>
+7:     <li>
+8:       <%=link_to project.name,project_path(project.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2010-05-20 23:40:13) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, logged_in?, new, and newpass):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:40:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:40:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:40:20) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:40:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:40:45) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (47.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (31.0ms)[0m   [0mINSERT INTO `users` (`salt`, `status`, `reminder`, `updated_at`, `is_blocked`, `online`, `crypted_password`, `last_seen_at`, `remember_token_expires_at`, `admin`, `staff`, `phone_number`, `default_avatar`, `remember_token`, `posts_count`, `first_name`, `login`, `last_name`, `last_ping`, `email`, `created_at`, `middle_name`, `homepage_view_count`) VALUES('39b65336dd06840badfa3db35b0749f466b1834a', NULL, 0, '2010-05-20 16:40:48', 0, 0, '40bbde6cc1c5c86849777a6f9f129c78e8b264ac', NULL, NULL, 0, 0, NULL, NULL, NULL, 0, NULL, 'bhanuprasad143@gmail.com', NULL, NULL, 'bhanuprasad143@gmail.com', '2010-05-20 16:40:48', NULL, 0)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3125ms (DB: 109) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:40:48) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 687ms (View: 31, DB: 0) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:40:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:41:20) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects</h3>
+5:   <ul class="project_list">
+6:     <%@projects.each do |project|%>
+7:     <li>
+8:       <%=link_to project.name,project_path(project.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:42:39) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:44:03) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:46:02) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 16ms (View: 0, DB: 15) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:46:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:46:46) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:47:09) [GET]
+
+ActionController::RoutingError (No route matches "/projects/show/83109" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:47:14) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (282.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:47:35) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:47:38) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:47:54) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-20 23:49:00) [GET]
+  Parameters: {"id"=>"83109"}
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:14:in `find'
+  app/controllers/projects_controller.rb:10:in `show'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:49:22) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 2079ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:49:25) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:49:50) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 1563ms (DB: 15) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:49:52) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:50:02) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 219ms (View: 219, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:50:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:50:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:50:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:50:10) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 1578ms (DB: 31) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:50:12) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (282.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:50:25) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:50:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:50:39) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 1672ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:50:41) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:51:32) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:51:34) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:52:36) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:52:38) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:53:11) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:53:37) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:53:42) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:53:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-20 23:53:46) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-20 23:53:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:54:16) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 1656ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:54:18) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:7:in `index'
+
+Rendered rescues/_trace (313.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:57:48) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+ArgumentError (wrong number of arguments (0 for 2)):
+  app/controllers/sessions_controller.rb:18:in `token'
+  app/controllers/sessions_controller.rb:18:in `create'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-20 23:58:29) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`salt`, `status`, `reminder`, `updated_at`, `is_blocked`, `online`, `crypted_password`, `last_seen_at`, `remember_token_expires_at`, `admin`, `staff`, `phone_number`, `default_avatar`, `remember_token`, `posts_count`, `first_name`, `login`, `last_name`, `last_ping`, `email`, `created_at`, `middle_name`, `homepage_view_count`) VALUES('2c85c235a94b18e895da4496e97f6881918b335b', NULL, 0, '2010-05-20 16:58:31', 0, 0, 'e6f18d846cbd3bac7935729e09a853de19c02ae0', NULL, NULL, 0, 0, NULL, NULL, NULL, 0, NULL, 'bhanuprasad143@gmail.com', NULL, NULL, 'bhanuprasad143@gmail.com', '2010-05-20 16:58:31', NULL, 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2250ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-20 23:58:31) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:8:in `index'
+
+Rendered rescues/_trace (171.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-05-21 00:00:18) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+SyntaxError (E:/projects/ptbarnum/app/controllers/sessions_controller.rb:19: syntax error, unexpected '='
+      session[:token] =  = @client.token
+                          ^):
+  
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 00:00:41) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+ArgumentError (wrong number of arguments (0 for 2)):
+  app/controllers/sessions_controller.rb:19:in `token'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+Rendered rescues/_trace (282.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 00:02:44) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 1516ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 00:02:45) [GET]
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/projects_controller.rb:8:in `index'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 00:04:17) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/project.rb:7:in `all'
+  app/controllers/sessions_controller.rb:19:in `create'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 00:05:49) [POST]
+  Parameters: {"authenticity_token"=>"gqiZe2dRd0J6pvW0Kxc6wGptRZ9Ye2Wx0Gg2ZKFIh+k=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/projects
+Completed in 2625ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 00:05:51) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 1203ms (View: 250, DB: 0) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:05:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:05:58) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:09:48) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:11:07) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:11:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:11:31) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3>My Projects/<%=@project.name%></h3>
+5: </div>
+6:   <div class="content grid_7 suffix_1 alpha">
+7:   </div>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:11:43) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:16:59) [GET]
+  Parameters: {"id"=>"83109"}
+
+NoMethodError (undefined method `members' for #<PivotalTracker::Project:0x4838048>):
+  app/controllers/projects_controller.rb:11:in `show'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:22:10) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.person.name,member_path(member.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:23:00) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.person.name,member_path(member.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:23:35) [GET]
+  Parameters: {"id"=>"83109"}
+
+NoMethodError (undefined method `print_r' for #<ProjectsController:0x486fdb8>):
+  app/controllers/projects_controller.rb:11:in `show'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:23:41) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.person.name,member_path(member.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:24:46) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:24:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:25:09) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:25:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:25:27) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:25:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:26:43) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `pp' for #<ActionView::Base:0x47b25b0>) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3><%pp @project%>'s members</h3>
+5:   <ul class="project_list">
+6:     
+7:   </ul>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:27:47) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 172ms (View: 32, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:27:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:27:53) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:27:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:27:54) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:27:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:28:12) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:28:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:29:08) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `put' for #<ActionView::Base:0x4730e98>) on line #4 of app/views/projects/show.html.erb:
+1: <br/>
+2: <br/>
+3: <div class="container grid_4 omega">
+4:   <h3><% put @project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     
+7:   </ul>
+
+    app/views/projects/show.html.erb:4
+
+Rendered rescues/_trace (235.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:29:35) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:32:36) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:32:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:34:08) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.person.name,member_path(member.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:37:24) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.person.name,member_path(member.id)%>
+9:     </li>
+
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:39:17) [GET]
+  Parameters: {"id"=>"83109"}
+
+NoMethodError (undefined method `members' for #<PivotalTracker::Project:0x4838048>):
+  app/controllers/projects_controller.rb:12:in `show'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:40:55) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `member_path' for #<ActionView::Base:0x4755770>) on line #8 of app/views/projects/show.html.erb:
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.name,member_path(member.id)%>
+9:     </li>
+10:     <%end%>
+11:   </ul>
+
+    app/views/projects/show.html.erb:8
+    app/views/projects/show.html.erb:6:in `each'
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:41:29) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 719ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:41:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-21 00:52:16) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:52:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 00:52:29) [GET]
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 671ms (View: 15, DB: 0) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:52:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:52:33) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+
+ActionView::TemplateError (undefined method `each' for PivotalTracker::Membership:Class) on line #6 of app/views/projects/show.html.erb:
+3: <div class="container grid_4 omega">
+4:   <h3><%=@project.name%>'s members</h3>
+5:   <ul class="project_list">
+6:     <%@members.each do |member|%>
+7:     <li>
+8:       <%=link_to member.name,member_path(member.id)%>
+9:     </li>
+
+    c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/proxy.rb:56:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/pivotal-tracker-0.1.3/lib/pivotal-tracker/proxy.rb:56:in `method_missing'
+    app/views/projects/show.html.erb:6
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 00:53:02) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 906ms (View: 31, DB: 0) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 00:53:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (250.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-21 21:16:36) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1516ms (View: 1516, DB: 344) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:16:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 21:17:42) [POST]
+  Parameters: {"authenticity_token"=>"ChhRNB4+XZ44g7DzhVJleTZWDD5+95YQGA4CpaH7Tt0=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (687.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (282.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (141.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3719ms (DB: 1141) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:17:46) [GET]
+  [4;36;1mProject Load (78.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `account' for #<PivotalTracker::Project:0x482a934>):
+  app/controllers/projects_controller.rb:20:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:18:43) [GET]
+  [4;36;1mProject Load (63.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `number_of_done_iterations_to_show' for #<PivotalTracker::Project:0x4639b98>):
+  app/controllers/projects_controller.rb:24:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:18:58) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `labels' for #<PivotalTracker::Project:0x48ea3ec>):
+  app/controllers/projects_controller.rb:25:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:19:14) [GET]
+  [4;36;1mProject Load (15.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `allow_attachments' for #<PivotalTracker::Project:0x4746e64>):
+  app/controllers/projects_controller.rb:26:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:19:27) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `public' for #<PivotalTracker::Project:0x45bd7c8>):
+  app/controllers/projects_controller.rb:27:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (406.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:19:41) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `use_https' for #<PivotalTracker::Project:0x48a7e20>):
+  app/controllers/projects_controller.rb:28:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:19:53) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `bugs_and_chores_are_estimatable' for #<PivotalTracker::Project:0x471fa6c>):
+  app/controllers/projects_controller.rb:29:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:20:15) [GET]
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `commit_mode' for #<PivotalTracker::Project:0x459262c>):
+  app/controllers/projects_controller.rb:30:in `index'
+  app/controllers/projects_controller.rb:10:in `each'
+  app/controllers/projects_controller.rb:10:in `index'
+
+Rendered rescues/_trace (375.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:20:33) [GET]
+  [4;36;1mProject Load (15.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (157.0ms)[0m   [0mINSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(83109, 'ptbarnum', 0, 0, 1, 'Monday', NULL, 0, 10, 0, NULL, '0,1,2,3,5,8', 10, 'Average of 3 iterations', NULL, 0, NULL)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+Completed in 1047ms (View: 94, DB: 266) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:20:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:20:57) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Create (31.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `fullname`, `login`, `email`, `created_at`) VALUES('442c61880b536d748a90f0737f7cdb9aba48adb5', '2010-05-21 14:20:58', '2c211595a1dcf6ce44cedaffd832091ad4d938aa', 'Michael J O\'Boyle', 'michaeloboyle@michaeloboyle.com', 'michaeloboyle@michaeloboyle.com', '2010-05-21 14:20:58')[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (undefined method `user_id=' for #<PivotalTracker::Membership:0x474d228>):
+  app/controllers/projects_controller.rb:55:in `show'
+  app/controllers/projects_controller.rb:38:in `each'
+  app/controllers/projects_controller.rb:38:in `show'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:23:23) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (31.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, NULL, 172)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Update (46.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-05-21 14:23:25', `fullname` = 'Bhana Prasad' WHERE `id` = 171[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, NULL, 171)[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 2672ms (View: 204, DB: 296) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:23:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:29:03) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, 'Owner', 172)[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, 'Member', 171)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 2547ms (View: 15, DB: 124) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:29:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:30:01) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=172) LIMIT 1[0m
+  [4;36;1mMembership Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, 'Owner', 172)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=171) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(83109, 'Member', 171)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 1281ms (View: 16, DB: 125) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:30:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:30:09) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=172) LIMIT 1[0m
+  [4;36;1mMembership Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+Completed in 750ms (View: 15, DB: 47) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:30:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:42:51) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=172) LIMIT 1[0m
+  [4;36;1mMembership Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 219ms (View: 16, DB: 78) | 200 OK [http://localhost/projects/83109]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:42:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 21:43:29) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=172) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=171) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+  [4;36;1mUser Load (63.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 438ms (View: 78, DB: 158) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:43:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:43:44) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Update (0.0ms)[0m   [0;1mUPDATE `projects` SET `last_activity_at` = '2010-05-20 13:54:35' WHERE `id` = 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 1703ms (View: 62, DB: 93) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:43:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-21 21:43:50) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-21 21:43:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:43:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 21:53:17) [POST]
+  Parameters: {"authenticity_token"=>"XLnxzzNgylaCfmc3Ic5HPNtaVZ01TeaJgS0oBlc3r6I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1422ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:53:19) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 1109ms (View: 173, DB: 30) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:53:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-05-21 21:53:23) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 344ms (View: 219, DB: 16) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 21:53:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_slice.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-05-21 21:54:04) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 454ms (View: 297, DB: 63) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 21:54:10) [GET]
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 859ms (View: 109, DB: 63) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-21 21:54:14) [GET]
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-21 21:54:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 22:01:25) [POST]
+  Parameters: {"authenticity_token"=>"+t1Ku6N590hkiqUTvRfzyb0+iUUGZNN3XWFZ244rmJ0=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1563ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 22:01:27) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 2937ms (View: 78, DB: 15) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-21 22:49:27) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-21 22:49:27) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 188ms (View: 188, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-21 22:50:27) [POST]
+  Parameters: {"authenticity_token"=>"JQtwleQ/EN5LehHDDLd5O8PaEX0nlYgitIxJ3xB/oGQ=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (109.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1641ms (DB: 109) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-21 22:50:29) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (125.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 2843ms (View: 124, DB: 141) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-05-21 22:50:50) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (125.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=172) LIMIT 1[0m
+  [4;35;1mMembership Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=83109 and user_id=171) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 1219ms (View: 0, DB: 171) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-05-21 22:51:14) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 156ms (View: 15, DB: 94) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (172.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-23 16:15:55) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1203ms (View: 1203, DB: 250) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-23 16:16:34) [POST]
+  Parameters: {"authenticity_token"=>"1v/2DZdb/5mW5kOUNmLwym5wG5evO82BEdxn3uMeG9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+ArgumentError (Unknown key(s): class):
+  (eval):3:in `has_and_belongs_to_many'
+  app/models/user.rb:31
+  app/controllers/sessions_controller.rb:18:in `create'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-23 16:17:02) [POST]
+  Parameters: {"authenticity_token"=>"1v/2DZdb/5mW5kOUNmLwym5wG5evO82BEdxn3uMeG9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+ArgumentError (Unknown key(s): classname):
+  (eval):3:in `has_and_belongs_to_many'
+  app/models/user.rb:31
+  app/controllers/sessions_controller.rb:18:in `create'
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-23 16:17:11) [POST]
+  Parameters: {"authenticity_token"=>"1v/2DZdb/5mW5kOUNmLwym5wG5evO82BEdxn3uMeG9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (437.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (219.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (172.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3469ms (DB: 906) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-23 16:17:14) [GET]
+  [4;36;1mProject Load (109.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (62.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 172) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (62.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=0 and user_id=172) LIMIT 1[0m
+  [4;35;1mMembership Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (94.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(0, 'Owner', 172)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 171) LIMIT 1[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=0 and user_id=171) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(0, 'Member', 171)[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+Completed in 3016ms (View: 125, DB: 421) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:17:23) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;35;1mmemberships_users Columns (0.0ms)[0m   [0mMysql::Error: Table 'ptbarnum.memberships_users' doesn't exist: SHOW FIELDS FROM `memberships_users`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'ptbarnum.memberships_users' doesn't exist: SHOW FIELDS FROM `memberships_users`):
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:19:29) [GET]
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 2531ms (View: 328, DB: 109) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:20:10) [GET]
+  [4;35;1mUser Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 1094ms (View: 63, DB: 64) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:20:20) [GET]
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 219ms (View: 32, DB: 32) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:20:32) [GET]
+  [4;35;1mUser Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 265ms (View: 31, DB: 110) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:20:41) [GET]
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 312ms (View: 78, DB: 47) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-23 16:20:52) [GET]
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 171) LIMIT 1[0m
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 171 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 359ms (View: 125, DB: 47) | 200 OK [http://localhost/stories]

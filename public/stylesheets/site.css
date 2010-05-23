@@ -1,0 +1,366 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #303030;
+  background: url(/images/bg.gif) top left repeat-x;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-size: 12px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+form li {
+  padding: 4px 0;
+}
+
+#header {
+  height: 43px;
+  min-width: 700px;
+  color: white;
+}
+
+#header #top_brand {
+  float: left;
+  margin: 8px 0 0 20px;
+}
+
+#header #top_brand h2 {
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  float: left;
+  font-weight: normal;
+}
+
+#header #top_brand h3 {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #E6A686;
+  font-size: .63em;
+  margin: 9px 0 0 10px;
+}
+
+#header #top_brand h3 a,
+#header #top_brand h3 a:visited {
+  color: #E6A686;
+
+}
+
+#header .navigation {
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  float: right;
+  text-align: right;
+  margin: 17px 20px 0 0;
+  line-height: 1em;
+}
+
+#header .navigation li {
+    display: inline;
+}
+
+#header .navigation li:after {
+    content: "  |  ";
+}
+
+#header .navigation li:last-child:after {
+    content: "";
+}
+
+#header a,
+#header a:visited {
+  color: white;
+}
+
+#header #logged_in_as {
+  color: #E6A686;
+}
+
+#sub_header {
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 700px;
+}
+
+#sub_header h1 {
+  /*color: #872D00;*/
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#sub_header h1 .title {
+  font-weight: normal;
+}
+
+#sub_header .navigation,
+#body .navigation {
+  font-size: 12px;
+  text-align: right;
+  padding-top: 4px;
+}
+
+#sub_header .navigation a,
+#sub_header .navigation a:visited,
+#body .navigation a,
+#body .navigation a:visited {
+  color: #006699;
+}
+
+#footer {
+  background: #333 url(/images/footer_slice.png) top left repeat-x;
+  color: white;
+  height: 100px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+#footer a,
+#footer a:visited {
+  color: #DF800F;
+}
+
+#footer .logo {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.content, .container {
+  font-size: 12px;
+}
+
+.content h3, .container h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content h4, .container h4 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.content p, .content ul {
+  margin-bottom: 8px;
+  line-height: 146%;
+}
+
+.content h2 {
+  font-size: 1.53em;
+  font-weight: bold;
+}
+
+.content h3 {
+  margin: 16px 0 8px 0;
+}
+
+.content ul {
+  margin-left: 20px;
+}
+
+.content li {
+  list-style-type: disc;
+}
+
+.content a,
+.content a:visited,
+.container a,
+.container a:visited {
+  color: #993300;
+}
+
+.content .intro p {
+    font-size: 14px;
+    line-height: 140%
+}
+
+p.screenshot {
+  text-align: center;
+  margin: 20px 0;
+}
+
+p.screenshot img {
+    border: 1px solid #303030;
+}
+
+.container {
+  background-color: #EFEFEF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 20px 0;
+  padding: 15px;
+}
+
+.container h3 {
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  border-bottom: solid #9c9c9c 1px;
+}
+
+div#error_message {
+  color: #c52400;
+  padding: 10px 0;
+}
+
+/* any element marked with class data should NEVER be displayed */
+
+.data {
+  display: none;
+}
+
+thead {
+  background-color: #e2e2e2;
+  border-bottom: solid #747474 1px;
+}
+
+th.label {
+  color: #5e5e5e;
+  padding: 10px 26px 5px 22px;
+}
+
+#status {
+  background: url(/images/transparent_gray.png) 0 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 400px;
+  position: fixed;
+  top: 40px;
+  left: 300px;
+  z-index:1;
+  text-align: center;
+  padding: 10px;
+  color: #FFF;
+  font-size: 14px;
+  display: none;
+}
+
+#status.error {
+  color: #ff3333;
+}
+
+.none {
+    display : none;
+}
+
+
+/** /help **/
+.help .content ul {
+  margin: 0;
+}
+
+.help .content li {
+  list-style-type: none;
+  border-top: 1px dotted #303030;
+  margin: 16px 0;
+}
+
+/** /projects **/
+.project_list > li {
+    margin-bottom: 6px;
+}
+
+.project_list > li > a {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.project_list a, .project_list a:visited {
+  color: #006699;
+}
+
+.project_list a:hover {
+  text-decoration: underline;
+}
+
+
+/** /login **/
+#login_form input[type=text],
+#login_form input[type=password] {
+  width: 250px;
+  margin: 4px 0;
+}
+
+/** /errors/tracker **/
+
+.tracker_error .content .error {
+    font-weight: bold;
+}
+
+/** Story card styling **/
+
+.story_card {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #A4A4A4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 300px;
+  top: 0;
+  color: #303030;
+  font-size: 11px;
+}
+
+.story_card.show,
+.story_card.over {
+    display: block;
+}
+
+.story_card.left {
+}
+
+.story_card.right {
+}
+
+.story_card h3 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.story_card .current_state,
+.story_card .requested_by,
+.story_card .deadline {
+  color: gray;
+}
+
+.after_deadline .story_card .deadline {
+  color: #923131;
+}
+
+.story_card h4 {
+  font-weight: bold;
+  margin: 6px 0 4px 0;
+}
+
+.story_card p {
+  line-height: 140%;
+}
+
+.story_card .link {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: solid #999 1px;
+}
+
+.story_card .link a {
+  color: #006699;
+}

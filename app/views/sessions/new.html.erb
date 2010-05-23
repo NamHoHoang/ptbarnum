@@ -1,0 +1,25 @@
+<br/>
+<br/>
+<%unless flash[:login_error].nil?%>
+<div id="error_message">Either unknown user or incorrect password for user: <%=@email%></div>
+<%end%>
+<div class="container grid_4 omega">
+    <h3>Sign in</h3>
+    <%form_for :sessions, :url=>"/sessions" do |f|%>
+    <ul>
+      <li>
+        <label>Tracker Username or Email</label><br>
+        <input name="email" type="text" size="30" value="<%=@email%>">
+      </li>
+      <li>
+        <label>Password</label><br>
+        <input name="password" type="password"  size="30" value="">
+      </li>
+      <li>
+        <input value="Sign in" type="submit">
+      </li>
+    </ul>
+    <%end%>
+  </div>
+  <div class="content grid_7 suffix_1 alpha">
+  </div>
