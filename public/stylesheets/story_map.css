@@ -1,0 +1,298 @@
+
+#footer {
+  margin-top: 0;
+  height: 30px;
+}
+
+#footer p {
+  text-align:center;
+}
+
+#sub_header h1 {
+  float: left;
+}
+
+#sub_header {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+#story_map_controls {
+  float:right;
+  padding-top: 6px;
+  font-size: 12px;
+}
+
+#story_map_controls li {
+  float: left;
+  margin-left: 20px;
+}
+
+#story_map_controls a,
+#story_map_controls a:visited {
+  color: #006699;
+  font-weight: bold;
+}
+
+#story_map_controls label {
+  padding-right: 8px;
+  margin-left: 4px;
+  display: inline-block;
+  font-weight: normal;
+}
+
+#main_content {
+  padding: 0;
+  min-width: 100%;
+}
+
+#main_content a:hover {
+  text-decoration: underline;
+}
+
+#story_map td,
+#story_map th,
+#story_map li {
+  font-size: 11px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+#story_map {
+  background-color: #666;
+}
+
+#story_map table tbody {
+  -moz-box-shadow: 0px 10px 10px -10px #333;
+}
+
+#story_map table tbody tr td {
+  vertical-align: top;
+  background: #a4a4a4;
+  padding: 0 1px 0px 0;
+  min-width: 120px;
+}
+
+#story_map table tbody tr td:first-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+
+td .placeholder {
+  height: 24px;
+  border-top: solid #979797 1px;
+}
+
+ol {
+  padding: 0;
+}
+
+ol li {
+  border: solid #979797 1px;
+  border-bottom: none;
+}
+
+ol li.hover {
+  background-color: #fcfcfc;
+}
+
+ol li,
+#story_map.dragging ol li {
+  background-color: #fff;
+}
+
+ol li.accepted,
+#story_map.dragging ol li.accepted {
+  background-color: #b7e69d;
+}
+
+ol li.accepted.hover {
+  background-color: #c7f6ad;
+}
+
+ol li.unscheduled {
+  background-color: #fff;
+}
+
+ol li.started,
+#story_map.dragging ol li.started,
+ol li.finished,
+#story_map.dragging ol li.finished,
+ol li.delivered,
+#story_map.dragging ol li.delivered {
+  background-color: #ffe79f;
+}
+
+ol li.started.hover,
+ol li.finished.hover,
+ol li.delivered.hover {
+  background-color: #fff7bf;
+}
+
+.story_list .storyDetailIcon {
+  float: right;
+  padding: 2px 2px 5px 5px;
+}
+
+.story_list .storyDetailIcon,
+td.release-marker .storyDetailIcon,
+#story_map.dragging .story_list .storyDetailIcon {
+  visibility: hidden;
+}
+
+.story_list li.hover .storyDetailIcon,
+td.release-marker.hover .storyDetailIcon {
+  visibility: visible;
+}
+
+.story_list .estimateIcon {
+  margin-left: 5px;
+}
+
+.story_list li {
+  overflow: visible;
+  position: relative;
+}
+
+.story_list li .icons {
+  float: left;
+  padding: 5px 0 5px 5px;
+  width: 15px;
+}
+
+.story_list li .name {
+  padding: 5px 0 5px 25px;
+  line-height: 1.2em;
+}
+
+.story_list .unestimated.feature .name {
+  font-style: italic;
+}
+
+.storyDetailIcon:hover {
+  cursor: pointer;
+}
+
+/*
+--------------------------------------------------------------------------------
+*/
+
+
+.release {
+  background-color: #407aa5;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-top: solid #a5a5a5 2px;
+  border-bottom: solid #a5a5a5 2px;
+  margin-bottom: 14px;
+}
+
+.release.after_deadline {
+  background-color: #923131;
+}
+
+.release table {
+  width: 100%;
+}
+
+.release th.label {
+  padding: 0;
+  border-right: solid #a5a5a5 1px;
+}
+
+.release th.label>div {
+  border-right: solid #efefef 1px;
+  border-left: solid #efefef 1px;
+}
+
+.release th.label .title {
+  display: block;
+  line-height: 27px;
+  padding: 0 5px;
+  background-color: #E2E2E2;
+  white-space: nowrap;
+}
+
+.release th.label.hover .title {
+  background-color: #d6d6d6;
+}
+
+.release th.label.first {
+  background-color: #407AA5;
+}
+
+.release th.label.first > div {
+  border-left: 0;
+}
+
+.release th.label.first .title {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  padding-left: 10px;
+}
+
+#story_map td.release-marker {
+  color: white;
+  font-size: 12px;
+  padding: 8px 5px 4px 36px;
+  background: url(http://pivotaltracker.com/images/v3/icons/stories_view/release_icon.png) 12px center no-repeat;
+}
+
+#story_map td.release-marker.placeholder {
+  background-image: none;
+}
+
+ol {
+  padding-bottom: 0;
+}
+
+.ajax-loading {
+  background: #fff url(/images/ajax-loader.gif) no-repeat 2px 4px;
+}
+
+li img.icon {
+  height: 14px;
+  width: 14px;
+  float: right;
+  position: relative;
+  right: 5px;
+  bottom: 5px;
+}
+
+/*
+*
+*  drag and drop interaction styles
+*
+*/
+
+.ui-draggable:hover,
+.ui-sortable li:hover {
+  cursor: move;
+}
+
+ol li.drop_after,
+ol li.prioritize_after {
+    border-bottom: solid black 2px;
+    margin-bottom: -2px;
+    z-index: 1;
+}
+
+div.placeholder.drop_before,
+div.placeholder.prioritize_before,
+ol li.drop_before,
+ol li.prioritize_before {
+  border-top: solid black 2px;
+  margin-top: -1px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 23, 2010 at 08:11 PM
+-- Generation Time: May 27, 2010 at 01:47 PM
 -- Server version: 5.1.29
 -- PHP Version: 5.2.9
 
@@ -51,7 +51,7 @@ INSERT INTO `memberships` (`id`, `user_id`, `project_id`, `role`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `projects` (
-  `id` int(10) unsigned NOT NULL DEFAULT '0',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned DEFAULT NULL,
   `name` varchar(200) DEFAULT NULL,
   `iteration_length` int(10) unsigned DEFAULT NULL,
@@ -70,14 +70,14 @@ CREATE TABLE IF NOT EXISTS `projects` (
   `commit_mode` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `last_activity_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `projects`
 --
 
 INSERT INTO `projects` (`id`, `pid`, `name`, `iteration_length`, `week_start_day`, `point_scale`, `account`, `velocity_scheme`, `current_velocity`, `initial_velocity`, `number_of_done_iterations_to_show`, `labels`, `allow_attachments`, `public`, `use_https`, `bugs_and_chores_are_estimatable`, `commit_mode`, `last_activity_at`) VALUES
-(0, 83109, 'ptbarnum', 1, 'Monday', '0,1,2,3,5,8', NULL, 'Average of 3 iterations', 10, 10, NULL, NULL, 0, 0, 0, 0, 0, '2010-05-20 13:54:35');
+(1, 83109, 'ptbarnum', 1, 'Monday', '0,1,2,3,5,8', NULL, 'Average of 3 iterations', 10, 10, NULL, NULL, 0, 0, 0, 0, 0, '2010-05-25 12:26:29');
 
 -- --------------------------------------------------------
 

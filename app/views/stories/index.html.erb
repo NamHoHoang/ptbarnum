@@ -1,34 +1,47 @@
 <br/>
 <br/>
-<%@projects.each do |project|%>
-  <b><%=project.name%></b>
-  <hr>
-  <table border="1">
+<div id="story_map" style="width: 100%;">
+<div id="release_0" class="release  before_deadline">
+  <table cellspacing="0">
+  <thead>
   <tr>
-    <td><b>Name</b>
-    </td>
-    <td><b>Description</b>
-    </td>
-    <td><b>Type</b>
-    </td>
-    <td><b>Current State</b>
-    </td>
-    <td><b>Requested by</b>
-    </td>
+    <%@projects.each do |project|%>
+    <th class="label first ui-droppable"><div><span class="data activity-name"><%=project.name%></span><span class="title"><b><%=project.name%></b></span></div></th>
+    <%end%>
   </tr>
-  <%@stories[project.id].each do |story|%>
-    <tr>
-    <td><%=story.name%>
-    </td>
-    <td><%=story.description%>
-    </td>
-    <td><%=story.story_type%>
-    </td>
-    <td><%=story.current_state%>
-    </td>
-    <td><%=story.requested_by%>
-    </td>
-    </tr>
+  <tr>
+  <%@projects.each do |project|%>
+  <td>
+    <ol class="story_list">
+    <%@stories[project.id].each do |story|%>
+      <li id="position_<%=story.id%>" class="story points2 accepted feature clearfix visible ui-draggable ui-droppable">
+        <span class="data">
+          <span class="id"><%=story.id%></span>
+          <span class="priority">0</span>
+        </span>
+        <img src="http://www.pivotaltracker.com/images/v3/icons/stories_view/story_flyover_icon.png" class="storyDetailIcon">
+        <div class="icons">
+          <img src="http://www.pivotaltracker.com/images/v3/icons/stories_view/estimate_<%=story.estimate%>pt_fibonacci.gif" class="estimateIcon">
+        </div>
+        <p class="name"><%=story.name%></p>
+        <div class="story_card">
+          <div class="header">
+            <h3><%=story.name%></h3>
+            <p class="requested_by">Requested by <%=story.requested_by%></p>
+            <p class="current_state"><%=story.current_state%></p>
+          </div>
+          <div class="description"><h4>Description</h4><p><%=story.description%></p></div>
+          <div class="link">
+            <a target="_blank" href="http://www.pivotaltracker.com/story/show/<%=story.id%>">http://www.pivotaltracker.com/story/show/<%=story.id%></a>
+          </div>
+        </div>
+      </li>
+    <%end%>
+  </td>
   <%end%>
+  </tr>
   </table>
-<%end%>
+</div>
+</div>
+</div>
+</div>
