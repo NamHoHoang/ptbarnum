@@ -21,13 +21,6 @@ class ProjectsController < ApplicationController
         cur_project.velocity_scheme = project.velocity_scheme
         cur_project.current_velocity = project.current_velocity
         cur_project.initial_velocity = project.initial_velocity
-        #cur_project.number_of_done_iterations_to_show = project.number_of_done_iterations_to_show
-        #cur_project.labels = project.labels
-        #cur_project.allow_attachments = 1 if project.allow_attachments == "true"
-        #cur_project.public = 1 if project.public == "true"
-        #cur_project.use_https = 1 if project.use_https == "true"
-        #cur_project.bugs_and_chores_are_estimatable = 1 if project.bugs_and_chores_are_estimatable=="true"
-        #cur_project.commit_mode = 1 if project.commit_mode== "true"
         cur_project.last_activity_at = project.last_activity_at
         cur_project.save
         @members = project.memberships.all
@@ -45,10 +38,10 @@ class ProjectsController < ApplicationController
           user.save
         end
         #associate user to project
-        membership = Membership.find(:first, :conditions=>["project_id=? and user_id=?", params[:id].to_i, user.id])
+        membership = Membership.find(:first, :conditions=>["project_id=? and user_id=?", cur_project.id, user.id])
         if membership.nil?
           membership = Membership.new
-          membership.project_id = params[:id].to_i
+          membership.project_id = cur_project.id
           membership.user_id = user.id
           membership.role = member.role
           membership.save
@@ -57,10 +50,12 @@ class ProjectsController < ApplicationController
           membership.save
         end
     end
-    end
+  end
+  @projects = current_user.projects
   end
   def show
-    @project = PivotalTracker::Project.find(params[:id].to_i)
+    project = Project.find(params[:id])
+    @project = PivotalTracker::Project.find(project.pid)
     @members = @project.memberships.all
     @members.each do |member|
         user = User.find(:first, :conditions=>["email=?", member.email])
