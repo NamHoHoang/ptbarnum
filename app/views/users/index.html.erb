@@ -3,7 +3,7 @@
   <ul class="project_list">
     <%@users.each do |user|%>
     <li>
-      <b><%=user.fullname%></b>
+      <%= link_to user.fullname, user_path(user)%></b>
     </li>
     <%end%>
   </ul>
