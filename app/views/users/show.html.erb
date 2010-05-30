@@ -14,8 +14,14 @@
   <%@projects.each do |project|%>
   <td>
     <ol class="story_list">
-    <%@stories[project.id].each do |story|%>
-      <li id="position_<%=story.id%>" class="story points2 accepted feature clearfix visible ui-draggable ui-droppable">
+    <%
+    @stories[project.id].each do |story|
+      ui_state_disabled=""
+      if (story.current_state=="accepted")
+        ui_state_disabled = "ui-state-disabled"
+      end
+    %>
+      <li id="position_<%=story.id%>" class="story points<%=story.estimate%> <%=story.current_state%> <%=story.story_type%> clearfix visible <%=ui_state_disabled%> ui-draggable ui-droppable">
         <span class="data">
           <span class="id"><%=story.id%></span>
           <span class="priority">0</span>
@@ -46,3 +52,25 @@
 </div>
 </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $(".story_list").sortable({
+      items: 'li:not(.ui-state-disabled)'
+    });
+  });
+  $( ".story_list" ).bind( "sortupdate", function(event, ui) {
+    var position='';
+    var target = '';
+    if ($('> .data .id', $(ui.item).next()).text()!=""){
+      position = 'before';
+      target = $(ui.item).next();
+    }
+    else{
+      position = 'after';
+      target = $(ui.item).prev();
+    }
+    var story_id = $('> .data .id', $(ui.item)).text();
+    var target_id = $('> .data .id', target).text();
+    move_story(story_id,target_id,position);
+  });
+  </script>

@@ -15,7 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :projects
   map.resources :members
   map.resources :users
-  map.resources :stories
+  map.resources :stories,  :collection =>{:move => :post}
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }

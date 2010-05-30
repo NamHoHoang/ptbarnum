@@ -51,7 +51,11 @@ module PivotalTracker
     def delete
       Client.connection["/projects/#{project_id}/stories/#{id}"].delete
     end
-
+    
+    def move(story_id,move)
+      Client.connection["/projects/#{project_id}/stories/#{id}/moves?move\[move\]=#{move}&move\[target\]=#{story_id}"].post(self.to_xml, :content_type => 'application/xml')
+    end
+   
     def tasks
       @tasks ||= Proxy.new(self, Task)
     end

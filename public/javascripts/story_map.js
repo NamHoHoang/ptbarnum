@@ -110,3 +110,19 @@ $(function()
     $("img.storyDetailIcon").story_detail();
 });
 
+function move_story(story_id,target_id,position){
+  $.ajax({
+      type: 'POST',
+      url: "/stories/move?story=" + story_id + "&target=" + target_id + "&move=" + position,
+      dataType : "json",
+      success: function(data, status)
+      {
+          alert(data.message);
+      },
+      error: function(request, status)
+      {
+          var response = eval("(" + request.responseText + ")");
+          STORY_MAPPER.ajaxDefaults.error(request, response.message);
+      }
+  });
+}
