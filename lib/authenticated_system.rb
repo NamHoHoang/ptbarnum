@@ -1,3 +1,4 @@
+require "pivotal-tracker"
 module AuthenticatedSystem
 
     def newpass( len )
@@ -58,7 +59,14 @@ module AuthenticatedSystem
     #   skip_before_filter :login_required
     #
     def login_required
-      authorized? || access_denied
+      begin
+        projects = PivotalTracker::Project.all
+        authorized? || access_denied
+      rescue
+        reset_session
+        PivotalTracker::Client.token=''
+        redirect_to new_session_path
+      end
     end
 
     # Redirect as appropriate when an access request fails.

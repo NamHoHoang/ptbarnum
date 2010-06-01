@@ -14278,3 +14278,2124 @@ Processing StoriesController#index (for 127.0.0.1 at 2010-05-30 14:00:11) [GET]
 Rendering template within layouts/application
 Rendering stories/index
 Completed in 344ms (View: 15, DB: 94) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (171.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 09:46:13) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 906ms (View: 906, DB: 234) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 09:46:37) [POST]
+  Parameters: {"authenticity_token"=>"+8Edr0bR57cs9e9gUTiwhZZOGDktHh2xaqh4OVJy278=", "password"=>"1234qwer", "email"=>"bhanuprsad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1328ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 09:47:18) [POST]
+  Parameters: {"authenticity_token"=>"+8Edr0bR57cs9e9gUTiwhZZOGDktHh2xaqh4OVJy278=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (265.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (78.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3156ms (DB: 453) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 09:47:21) [GET]
+  [4;36;1mProject Load (47.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Update (93.0ms)[0m   [0mUPDATE `projects` SET `last_activity_at` = '2010-05-30 18:32:56' WHERE `id` = 1[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 2015ms (View: 77, DB: 297) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 09:47:30) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 1672ms (View: 16, DB: 141) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 09:48:34) [GET]
+  [4;36;1mUser Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1016ms (View: 48, DB: 93) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-05-31 09:48:41) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 156ms (View: 15, DB: 94) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:48:45) [GET]
+  [4;36;1mUser Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 09:48:53) [GET]
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (15.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 1047ms (View: 16, DB: 172) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:49:48) [GET]
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:50:39) [GET]
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:50:47) [GET]
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mmemberships Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:50:55) [GET]
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:51:28) [GET]
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:52:17) [GET]
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `stories' for []:Array):
+  app/controllers/stories_controller.rb:13:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:52:51) [GET]
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+NoMethodError (undefined method `stories' for []:Array):
+  app/controllers/stories_controller.rb:13:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 09:58:27) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/application
+Rendering stories/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #18 of app/views/stories/index.html.erb:
+15:     <ol class="story_list">
+16:     <%
+17:       stt=0
+18:       @stories[project.id].each do |story|
+19:       ui_state_disabled=""
+20:       if (story.current_state=="accepted")
+21:         ui_state_disabled = "ui-state-disabled"
+
+    app/views/stories/index.html.erb:18
+    app/views/stories/index.html.erb:13
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:12:23) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Columns (125.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 406ms (View: 281, DB: 125) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-31 10:12:27) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:12:28) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:12:46) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1156ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:13:05) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1250ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:15:02) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1531ms (View: 94, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:16:00) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+
+NameError (undefined local variable or method `session' for PivotalTracker::Client:Class):
+  lib/pivotal-tracker/client.rb:17:in `token'
+  app/controllers/sessions_controller.rb:12:in `create'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon May 31 10:29:00 +0700 2010
+  Status: 500 Internal Server Error
+  E:/projects/ptbarnum/lib/authenticated_system.rb:43: syntax error, unexpected tSYMBEG, expecting '('
+...n? && !PivotalTracker::Client:token.nil? && PivotalTracker::...
+                              ^
+E:/projects/ptbarnum/lib/authenticated_system.rb:43: syntax error, unexpected tSYMBEG, expecting '('
+...il? && PivotalTracker::Client:token!=""
+                              ^
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:379:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:259:in `require_or_load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:80:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:92:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:437:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:96:in `const_missing'
+    E:/projects/ptbarnum/app/controllers/application_controller.rb:6
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:379:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:259:in `require_or_load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:80:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:92:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:121:in `_call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:29:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:29:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon May 31 10:29:43 +0700 2010
+  Status: 500 Internal Server Error
+  E:/projects/ptbarnum/lib/authenticated_system.rb:43: syntax error, unexpected tSYMBEG, expecting '('
+...n? && !PivotalTracker::Client:token.nil? && PivotalTracker::...
+                              ^
+E:/projects/ptbarnum/lib/authenticated_system.rb:43: syntax error, unexpected tSYMBEG, expecting '('
+...il? && PivotalTracker::Client:token!=""
+                              ^
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:379:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:259:in `require_or_load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:80:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:92:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:437:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:96:in `const_missing'
+    E:/projects/ptbarnum/app/controllers/application_controller.rb:6
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:380:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:379:in `load_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:259:in `require_or_load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:80:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.6/lib/active_support/dependencies.rb:92:in `const_missing'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:121:in `_call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:29:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:29:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:37:48) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (156.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2765ms (DB: 219) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 10:37:51) [GET]
+
+ArgumentError (wrong number of arguments (0 for 2)):
+  lib/authenticated_system.rb:44:in `token'
+  lib/authenticated_system.rb:44:in `authorized?'
+  lib/authenticated_system.rb:62:in `login_required'
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:49:14) [POST]
+  Parameters: {"authenticity_token"=>"xiAFTyAGrvF8UBlvkI1VKk7jF6BkOEGgdGFneTkqH9I=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2234ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 10:49:17) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 1875ms (View: 141, DB: 93) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-31 10:49:27) [GET]
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:49:28) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 10:49:49) [POST]
+  Parameters: {"authenticity_token"=>"T4Avh1F1wuKuGCACCOUAcnP34yth1OzSJSDEevrCGXc=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1312ms (DB: 47) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 10:49:50) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:49:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 93ms (View: 77, DB: 16) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 10:49:58) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:49:58) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 109ms (View: 78, DB: 31) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 10:50:02) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:50:02) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 343ms (View: 281, DB: 62) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 10:51:11) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:51:11) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 297ms (View: 266, DB: 31) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-31 10:51:56) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 10:51:57) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-31 11:03:27) [POST]
+  Parameters: {"authenticity_token"=>"WjHqia1OE+Hp5gBNwrUnOfnJnsgw7xdIs6vbldGFxSY=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2328ms (DB: 63) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 11:03:29) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 1828ms (View: 93, DB: 126) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 11:04:02) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 156ms (View: 93, DB: 63) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-31 11:04:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Mon May 31 11:04:13 +0700 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.6/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.6/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 11:04:20) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 1468ms (View: 15, DB: 125) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 11:04:27) [GET]
+  [4;36;1mUser Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mStory Load (78.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Update (16.0ms)[0m   [0mUPDATE `stories` SET `estimate` = 5, `current_state` = 'delivered' WHERE `id` = 33[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (78.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3719629, 'unstarted', 'RestClient::Unauthorized (Unauthorized)?', NULL, 1, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3719629', NULL, 'Login form loads. Upon submitting login form, presented with:\nWe\'re sorry, but something went wrong.\nWe\'ve been notified about this issue and we\'ll take a look at it shortly.\n\nLog follows:\n\nProcessing SessionsController#new (for 174.54.113.241 at 2010-05-30 10:47:20) [GET]\nRendering template within layouts/application\nRendering sessions/new\nCompleted in 2ms (View: 2, DB: 0) | 200 OK [http://ec2-174-129-24-166.compute-1.amazonaws.com/]\n\n\nProcessing SessionsController#create (for 174.54.113.241 at 2010-05-30 10:47:25) [POST]\n Parameters: {\"authenticity_token\"=>\"O/qqSf5p3UEZvm/7YdW003m5VnFG1HO5X918RgvVdZQ=\", \"password\"=>\"xxx\", \"email\"=>\"michaeloboyle@michaeloboyle.com\"}\nRedirected to http://ec2-174-129-24-166.compute-1.amazonaws.com/projects\nCompleted in 930ms (DB: 0) | 302 Found [http://ec2-174-129-24-166.compute-1.amazonaws.com/sessions]\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-30 10:47:26) [GET]\n\nRestClient::Unauthorized (Unauthorized):\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit\'\n /usr/lib/ruby/1.8/net/http.rb:543:in `start\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get\'\n lib/pivotal-tracker/project.rb:7:in `all\'\n app/controllers/projects_controller.rb:8:in `index\'\n\nRendering /data/ptbarnum/releases/20100530174219/public/500.html (500 Internal Server Error)\n', NULL, NULL, 'setup', 'Bhana Prasad', '2010-05-30 17:55:33')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 2031ms (View: 31, DB: 249) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-05-31 11:04:32) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 1438ms (View: 16, DB: 110) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-05-31 11:04:36) [GET]
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (16.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 1562ms (View: 0, DB: 111) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (140.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:51:21) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 797ms (DB: 203) | 302 Found [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 21:51:22) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 188ms (View: 188, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2010-06-01 21:51:35) [GET]
+  Parameters: {"id"=>"error"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, logged_in?, new, and newpass):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#error (for 127.0.0.1 at 2010-06-01 21:52:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/error
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions/error]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 21:53:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 21:53:55) [POST]
+  Parameters: {"authenticity_token"=>"YMqVcR2oLOhxVle2kdayqTg1mrPAP+N0Xv1kq5/iBYI=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (734.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (422.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (63.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 4062ms (DB: 1250) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:54:00) [GET]
+  [4;36;1mProject Load (78.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Update (125.0ms)[0m   [0mUPDATE `projects` SET `last_activity_at` = '2010-06-01 08:54:44' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (63.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (15.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 3250ms (View: 157, DB: 546) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:54:08) [GET]
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (109.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (187.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 2250ms (View: 15, DB: 343) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:55:42) [GET]
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1125ms (View: 125, DB: 63) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:55:50) [GET]
+  [4;35;1mUser Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 687ms (View: 62, DB: 46) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:55:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:56:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:56:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (171.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:56:32) [GET]
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1000ms (View: 31, DB: 141) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:56:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (141.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:56:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:56:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (171.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-01 21:56:54) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 328ms (View: 78, DB: 62) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 21:56:56) [GET]
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 719ms (View: 31, DB: 79) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 21:56:58) [GET]
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 21:57:03) [GET]
+  [4;36;1mUser Columns (79.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (328.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 21:57:07) [GET]
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 21:57:12) [GET]
+  [4;36;1mUser Columns (109.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/stories_controller.rb:12:in `index'
+  app/controllers/stories_controller.rb:11:in `index'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 21:57:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:63:in `show'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:50:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1031ms (View: 1031, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 22:51:11) [POST]
+  Parameters: {"authenticity_token"=>"UM5ImfB1deh61V3IImzpRB/t5p/mHGAVGJMxe9mPRKo=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3156ms (DB: 78) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:51:14) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (140.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 2422ms (View: 32, DB: 219) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:52:14) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1422ms (View: 46, DB: 47) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:52:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:58:in `show'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:52:28) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 1297ms (View: 141, DB: 47) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:52:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+
+RestClient::Request::Unauthorized (Unauthorized):
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit'
+  c:/ruby/lib/ruby/1.8/net/http.rb:543:in `start'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute'
+  c:/ruby/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get'
+  lib/pivotal-tracker/project.rb:18:in `find'
+  app/controllers/projects_controller.rb:58:in `show'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:54:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (15.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1421ms (DB: 31) | 302 Found [http://localhost/projects/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:54:36) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 22:54:59) [POST]
+  Parameters: {"authenticity_token"=>"Sx9ganPs8YQirv9O4qZTxmTjISZFtXosbWJzm5ZpiO8=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1938ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:55:01) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1531ms (View: 16, DB: 31) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:55:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1062ms (DB: 0) | 302 Found [http://localhost/projects/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:55:18) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:55:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 22:55:51) [POST]
+  Parameters: {"authenticity_token"=>"AXIbUInlCVkRC/NMjdbAWIvOOQXFNfLkbsMOwTcN5L0=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3265ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:55:54) [GET]
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 1391ms (View: 172, DB: 63) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:55:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1140ms (DB: 15) | 302 Found [http://localhost/projects/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:55:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 22:57:23) [POST]
+  Parameters: {"authenticity_token"=>"+tHixZpU9pD4k7W73AEJo5s8v8w6+OfkGytaKNf+/dA=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1391ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:57:25) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 1187ms (View: 15, DB: 32) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:57:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1078ms (DB: 15) | 302 Found [http://localhost/projects/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:57:30) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 22:57:53) [POST]
+  Parameters: {"authenticity_token"=>"wjBMu2fhKG0gZzSTF/biyLtAiZRgFGYTipikNOW8cQw=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (63.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1468ms (DB: 63) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 22:57:55) [GET]
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 1344ms (View: 31, DB: 32) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 22:57:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (15.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1078ms (DB: 31) | 302 Found [http://localhost/projects/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:58:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 22:59:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 203ms (View: 187, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 23:00:07) [POST]
+  Parameters: {"authenticity_token"=>"LryCAIRAa0QLYDHad1S8wU6K7docg3qHtNQYlGft+bE=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2375ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 23:00:10) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 2890ms (View: 31, DB: 15) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 23:00:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 1156ms (DB: 15) | 302 Found [http://localhost/projects/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 23:00:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 16) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 23:05:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 171ms (View: 171, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 23:05:52) [POST]
+  Parameters: {"authenticity_token"=>"T9FJJ6zTnTsmz5H7cwarRn9zFdZ5uVlcCqjfsUN/Qrw=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2906ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 23:05:55) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (219.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (125.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 2719ms (View: 63, DB: 421) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 23:06:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 1453ms (View: 47, DB: 16) | 200 OK [http://localhost/projects/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 23:06:06) [GET]
+  [4;36;1mUser Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mStory Load (79.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (47.0ms)[0m   [0;1mUPDATE `stories` SET `current_state` = 'started' WHERE `id` = 34[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 3156ms (View: 93, DB: 172) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-01 23:07:46) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 375ms (View: 375, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-01 23:08:09) [POST]
+  Parameters: {"authenticity_token"=>"Gw0degkMU6iZ1LGSLU4jXJchQKOMOfCXJnua4Qk6VxQ=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1407ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-01 23:08:10) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mmemberships Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+Completed in 2547ms (View: 0, DB: 79) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-01 23:08:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;36;1mMembership Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 1890ms (View: 15, DB: 47) | 200 OK [http://localhost/projects/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-01 23:08:21) [GET]
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mmemberships Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` INNER JOIN `memberships` ON `projects`.id = `memberships`.project_id WHERE (`memberships`.user_id = 1 ) [0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 1703ms (View: 16, DB: 16) | 200 OK [http://localhost/stories]

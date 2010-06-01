@@ -3,7 +3,6 @@ module PivotalTracker
 
     class << self
       attr_writer :use_ssl, :token
-
       def use_ssl
         @use_ssl || false
       end
@@ -21,7 +20,7 @@ module PivotalTracker
       def connection(options={})
         @connection ||= RestClient::Resource.new("#{protocol}://www.pivotaltracker.com/services/v3", :headers => {'X-TrackerToken' => @token, 'Content-Type' => 'application/xml'})
       end
-
+      
       protected
     
         def protocol
