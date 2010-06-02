@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
   def index
     @projects = PivotalTracker::Project.all
     #Stores to db
-    Membership.delete_all([user_id=?", user.id])
+    
     @projects.each do |project|
       cur_project = Project.find(:first, :conditions=>["pid=?", project.id])
       if cur_project.nil?
@@ -24,6 +24,7 @@ class ProjectsController < ApplicationController
       cur_project.initial_velocity = project.initial_velocity
       cur_project.last_activity_at = project.last_activity_at
       cur_project.save
+      Membership.delete_all(["project_id=?", cur_project.id])
       @members = project.memberships.all
       @members.each do |member|
         user = User.find(:first, :conditions=>["email=?", member.email])
@@ -52,39 +53,11 @@ class ProjectsController < ApplicationController
         end
       end
     end
-    @projects = current_user.projects
   end
   def show
     begin
-      project = Project.find(params[:id])
-      @project = PivotalTracker::Project.find(project.pid)
+      @project = PivotalTracker::Project.find(params[:id].to_i)
       @members = @project.memberships.all
-      @members.each do |member|
-          user = User.find(:first, :conditions=>["email=?", member.email])
-          if user.nil?
-            user = User.new
-            user.login = member.email    
-            user.email = member.email
-            user.password = member.email
-            user.fullname = member.name
-            user.save
-          else
-            user.fullname = member.name
-            user.save
-          end
-          #associate user to project
-          membership = Membership.find(:first, :conditions=>["project_id=? and user_id=?", params[:id].to_i, user.id])
-          if membership.nil?
-            membership = Membership.new
-            membership.project_id = params[:id].to_i
-            membership.user_id = user.id
-            membership.role = member.role
-            membership.save
-          else 
-            membership.role = member.role
-            membership.save
-          end
-      end
     rescue
       reset_session
       PivotalTracker::Client.token=''

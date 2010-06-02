@@ -9,12 +9,12 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find(params[:id])
-    @projects = @user.projects
+    @projects = PivotalTracker::Project.all
     #Stores to db
     @stories = []
     @projects.each do |project|
       begin
-        @project = PivotalTracker::Project.find(project.pid)    
+        @project = PivotalTracker::Project.find(project.id)    
         stories = @project.stories.all(:owned_by=>@user.fullname)
         @stories[project.id] = stories
         stories.each do |story|

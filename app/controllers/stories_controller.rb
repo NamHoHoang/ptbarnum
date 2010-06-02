@@ -5,11 +5,11 @@ class StoriesController < ApplicationController
   # render new.rhtml
   before_filter :login_required
   def index
-    @projects = current_user.projects
+    @projects = PivotalTracker::Project.all
     #Stores to db
     @stories = []
     @projects.each do |project|
-      @project = PivotalTracker::Project.find(project.pid)    
+      @project = PivotalTracker::Project.find(project.id)    
       stories = @project.stories.all(:owned_by=>current_user.fullname)
       @stories[project.id] = stories
       stories.each do |story|
