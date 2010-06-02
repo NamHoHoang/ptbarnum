@@ -6,12 +6,17 @@
   <table cellspacing="0">
   <thead>
   <tr>
-    <%@projects.each do |project|%>
-    <th class="label first ui-droppable"><div><span class="data activity-name"><%=project.name%></span><span class="title"><b><%=project.name%></b></span></div></th>
-    <%end%>
+    <%@projects.each do |project|
+      unless @stories[project.id].nil?%>
+        <th class="label first ui-droppable"><div><span class="data activity-name"><%=project.name%></span><span class="title"><b><%=project.name%></b></span></div></th>
+    <%
+      end
+      end%>
   </tr>
   <tr>
-  <%@projects.each do |project|%>
+  <%@projects.each do |project|
+    unless @stories[project.id].nil?
+    %>
   <td>
     <ol class="story_list">
     <%
@@ -45,7 +50,9 @@
       </li>
     <%end%>
   </td>
-  <%end%>
+  <%
+    end
+    end%>
   </tr>
   </table>
 </div>

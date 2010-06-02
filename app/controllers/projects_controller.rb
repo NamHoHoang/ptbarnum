@@ -7,6 +7,7 @@ class ProjectsController < ApplicationController
   def index
     @projects = PivotalTracker::Project.all
     #Stores to db
+    Membership.delete_all([user_id=?", user.id])
     @projects.each do |project|
       cur_project = Project.find(:first, :conditions=>["pid=?", project.id])
       if cur_project.nil?
