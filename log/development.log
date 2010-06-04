@@ -16603,3 +16603,1210 @@ Rendering template within layouts/application
 Rendering users/show
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
 Completed in 3766ms (View: 78, DB: 16) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (141.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 21:46:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 1141ms (View: 1125, DB: 172) | 200 OK [http://localhost/]
+  [4;36;1mSQL (94.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 21:47:17) [POST]
+  Parameters: {"authenticity_token"=>"sYwk4kH32tLVbqEe/Z0FXuJxaznf+rzEKrQ6KYyTk/8=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (563.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (47.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3328ms (DB: 813) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-02 21:47:20) [GET]
+  [4;36;1mProject Load (32.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Update (47.0ms)[0m   [0mUPDATE `projects` SET `last_activity_at` = '2010-06-02 03:06:04' WHERE `id` = 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+
+NoMethodError (undefined method `include?' for 34:Fixnum):
+  app/controllers/projects_controller.rb:27:in `index'
+  app/controllers/projects_controller.rb:11:in `each'
+  app/controllers/projects_controller.rb:11:in `index'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-02 21:48:43) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (47.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (47.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Owner', 2)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Member', 1)[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 2828ms (View: 47, DB: 220) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-02 21:48:50) [GET]
+  Parameters: {"id"=>"83109"}
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 83109) [0m
+Redirected to http://localhost:3000/sessions/new
+Completed in 703ms (DB: 16) | 302 Found [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 21:48:51) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 21:49:53) [POST]
+  Parameters: {"authenticity_token"=>"IFsYczbg4qhmwywLCctdHULq6tz9Ox43xhNF0SgYRdY=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (94.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2187ms (DB: 110) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-02 21:49:55) [GET]
+  [4;35;1mProject Load (16.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (0.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Owner', 2)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (16.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Member', 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 3782ms (View: 16, DB: 94) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-02 21:50:02) [GET]
+  Parameters: {"id"=>"83109"}
+Redirected to http://localhost:3000/sessions/new
+Completed in 859ms (DB: 0) | 302 Found [http://localhost/projects/83109]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 21:50:03) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 15ms (View: 0, DB: 16) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 21:52:20) [POST]
+  Parameters: {"authenticity_token"=>"rQCXFFQcg376MPUmS5MfXE1s31sJcwINo4ylzRt+hP8=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1563ms (DB: 31) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-02 21:52:22) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (31.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=2) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Owner', 2)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=1 and user_id=1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(1, 'Member', 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 2531ms (View: 15, DB: 62) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-02 21:52:28) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 3843ms (View: 328, DB: 47) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-02 21:52:36) [GET]
+  [4;35;1mUser Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mStory Load (78.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 28[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 30[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 31[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 32[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 29[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 33[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Update (0.0ms)[0m   [0;1mUPDATE `stories` SET `project_id` = 83109 WHERE `id` = 34[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 2937ms (View: 125, DB: 172) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 21:52:49) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 797ms (View: 109, DB: 32) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 21:52:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 6766ms (View: 250, DB: 15) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 21:53:04) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 1688ms (View: 47, DB: 31) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 21:53:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mStory Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 3484ms (View: 15, DB: 32) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-02 21:53:17) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 16) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 21:53:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 20:05:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 906ms (View: 890, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 20:05:44) [POST]
+  Parameters: {"authenticity_token"=>"QjrxC4nK94GGq6YXPTH+khRJ0H0cCALlA9rqbvNuHfQ=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (15.0ms)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `fullname`, `login`, `email`, `created_at`) VALUES('190cf3b811b61467a8a110c1358ecdf54b398034', '2010-06-03 13:05:47', '7c00446787355fa6d3d8a9c37737b16c583bc409', 'bhanuprasad143@gmail.com', 'bhanuprasad143@gmail.com', 'bhanuprasad143@gmail.com', '2010-06-03 13:05:47')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 2484ms (DB: 93) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-03 20:05:47) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (16.0ms)[0m   [0;1mINSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(83109, 'ptbarnum', 0, 0, 1, 'Monday', NULL, 0, 10, 0, '2010-06-02 14:56:07', '0,1,2,3,5,8', 10, 'Average of 3 iterations', NULL, 0, NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Delete all (0.0ms)[0m   [0;1mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `fullname`, `login`, `email`, `created_at`) VALUES('5e1a9c5e3fb7e2f526375e707cfd7abe063c0044', '2010-06-03 13:05:49', '84628a2df36d5fd9dc709da07dc32d0897adfdc7', 'Michael J O\'Boyle', 'michaeloboyle@michaeloboyle.com', 'michaeloboyle@michaeloboyle.com', '2010-06-03 13:05:49')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;35;1mMembership Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mUser Update (31.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-03 13:05:49', `fullname` = 'Bhana Prasad' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 2375ms (View: 47, DB: 110) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 20:06:33) [POST]
+  Parameters: {"authenticity_token"=>"QjrxC4nK94GGq6YXPTH+khRJ0H0cCALlA9rqbvNuHfQ=", "password"=>"1234qwe", "email"=>"bhanuprasad143@gmail.com"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 1719ms (View: 156, DB: 63) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 20:06:44) [POST]
+  Parameters: {"authenticity_token"=>"QjrxC4nK94GGq6YXPTH+khRJ0H0cCALlA9rqbvNuHfQ=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1531ms (DB: 62) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-03 20:06:46) [GET]
+  [4;36;1mProject Load (16.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Delete all (0.0ms)[0m   [0;1mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;36;1mMembership Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 2547ms (View: 31, DB: 125) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-03 20:07:04) [GET]
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;35;1mStory Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3590648, 'delivered', 'create a mysql database for caching PT data', NULL, 83109, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3590648', NULL, 'Data pulled from API should be cached in a mysql database for performance reasons.', 2, NULL, NULL, 'Bhana Prasad', '2010-05-19 15:05:37')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3643407, 'delivered', 'Refine Workload View Presentation', NULL, 83109, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3643407', NULL, 'See attached mockup. Column head should be Project name.\n\nInspiration is taken from https://www.trackerstorymaps.com which may also be a reference for css styles and graphics.', 5, NULL, NULL, 'Bhana Prasad', '2010-05-24 15:05:57')[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3700826, 'delivered', 'link people view to workload view', NULL, 83109, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3700826', NULL, 'Clicking a person in people view should load workload view filter for clicked person.', 2, NULL, 'workload', 'Bhana Prasad', '2010-05-28 01:29:01')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3686413, 'delivered', 'setup help', NULL, 83109, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3686413', NULL, 'log shows the following errors\nany idea what i might be doing wrong?\n\nProcessing SessionsController#new (for 174.54.113.241 at 2010-05-26 19:03:31) [GET]\nRendering template within layouts/application\nRendering sessions/new\nCompleted in 15ms (View: 12, DB: 2) | 200 OK [http://ec2-174-129-24-166.compute-1.amazonaws.com/]\n\n\nProcessing SessionsController#create (for 174.54.113.241 at 2010-05-26 19:03:36) [POST]\n Parameters: {\"authenticity_token\"=>\"SbYcKmj10qkYgvtk/9NhvSxbJGyDh8Di2gzx8wHTtps=\", \"password\"=>\"testpw\", \"email\"=>\"michaeloboyle@michaeloboyle.com\"}\nRedirected to http://ec2-174-129-24-166.compute-1.amazonaws.com/projects\nCompleted in 947ms (DB: 1) | 302 Found [http://ec2-174-129-24-166.compute-1.amazonaws.com/sessions]\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-26 19:03:37) [GET]\n\nActiveRecord::StatementInvalid (Mysql::Error: Duplicate entry \'0\' for key 1: INSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(65371, \'family to do list\', 0, 0, 1, \'Monday\', NULL, 0, 10, 0, \'2010-03-14 21:56:11\', \'0,1,2,3\', 10, \'Average of 3 iterations\', NULL, 0, NULL)):\n app/controllers/projects_controller.rb:32:in `index\'\n app/controllers/projects_controller.rb:10:in `each\'\n app/controllers/projects_controller.rb:10:in `index\'\n\nRendering /data/ptbarnum/releases/20100527020306/public/500.html (500 Internal Server Error)\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-26 19:03:40) [GET]\n\nActiveRecord::StatementInvalid (Mysql::Error: Duplicate entry \'0\' for key 1: INSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(65371, \'family to do list\', 0, 0, 1, \'Monday\', NULL, 0, 10, 0, \'2010-03-14 21:56:11\', \'0,1,2,3\', 10, \'Average of 3 iterations\', NULL, 0, NULL)):\n app/controllers/projects_controller.rb:32:in `index\'\n app/controllers/projects_controller.rb:10:in `each\'\n app/controllers/projects_controller.rb:10:in `index\'\n\nRendering /data/ptbarnum/releases/20100527020306/public/500.html (500 Internal Server Error)\n', NULL, NULL, 'setup', 'Bhana Prasad', '2010-05-27 02:11:38')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3701235, 'delivered', 'support db migrations', NULL, 83109, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3701235', NULL, 'Setup has proven challenging and I believe that with the right migrations in place, i can use the simple deploy and db:migrate functions built into the engineyard cloud admin tool rather than using ssh and running sql scripts direction.', 1, NULL, NULL, 'Bhana Prasad', '2010-05-28 02:52:14')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3704832, 'delivered', 'drag and drop stories', NULL, 83109, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3704832', NULL, 'drag and drop stories to change priority. commit changes to pivotaltracker.com', 5, NULL, 'workload', 'Bhana Prasad', '2010-05-28 11:48:30')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3719629, 'delivered', 'RestClient::Unauthorized (Unauthorized)?', NULL, 83109, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3719629', NULL, 'Login form loads. Upon submitting login form, presented with:\nWe\'re sorry, but something went wrong.\nWe\'ve been notified about this issue and we\'ll take a look at it shortly.\n\nLog follows:\n\nProcessing SessionsController#new (for 174.54.113.241 at 2010-05-30 10:47:20) [GET]\nRendering template within layouts/application\nRendering sessions/new\nCompleted in 2ms (View: 2, DB: 0) | 200 OK [http://ec2-174-129-24-166.compute-1.amazonaws.com/]\n\n\nProcessing SessionsController#create (for 174.54.113.241 at 2010-05-30 10:47:25) [POST]\n Parameters: {\"authenticity_token\"=>\"O/qqSf5p3UEZvm/7YdW003m5VnFG1HO5X918RgvVdZQ=\", \"password\"=>\"xxx\", \"email\"=>\"michaeloboyle@michaeloboyle.com\"}\nRedirected to http://ec2-174-129-24-166.compute-1.amazonaws.com/projects\nCompleted in 930ms (DB: 0) | 302 Found [http://ec2-174-129-24-166.compute-1.amazonaws.com/sessions]\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-30 10:47:26) [GET]\n\nRestClient::Unauthorized (Unauthorized):\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit\'\n /usr/lib/ruby/1.8/net/http.rb:543:in `start\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get\'\n lib/pivotal-tracker/project.rb:7:in `all\'\n app/controllers/projects_controller.rb:8:in `index\'\n\nRendering /data/ptbarnum/releases/20100530174219/public/500.html (500 Internal Server Error)\n', NULL, NULL, 'setup', 'Bhana Prasad', '2010-05-30 17:55:33')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 21672ms (View: 94, DB: 186) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 20:36:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 625ms (View: 625, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 20:58:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 640ms (View: 640, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 20:58:32) [POST]
+  Parameters: {"authenticity_token"=>"c5joMRNFyowDdFQ+wX4etnngn1QqG/QPEyXM0MpPymg=", "password"=>"test2test2", "email"=>"test2@michaeloboyle.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'test2@michaeloboyle.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `fullname`, `login`, `email`, `created_at`) VALUES('a7963e8ac10acde2f44b6468114e6fe2856fde70', '2010-06-03 13:58:35', '7fec98b181893c981aafeeb21cf96d69db01913c', 'test2@michaeloboyle.com', 'test2@michaeloboyle.com', 'test2@michaeloboyle.com', '2010-06-03 13:58:35')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 3375ms (DB: 31) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-03 20:58:35) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (16.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;35;1mMembership Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `fullname`, `login`, `email`, `created_at`) VALUES('e4b9864387f2d6bbebf1dbd51ac4a65df127ebaa', '2010-06-03 13:58:37', '66cb41ac989e944f14207018d3423756d5a07be2', 'test1', 'test1@michaeloboyle.com', 'test1@michaeloboyle.com', '2010-06-03 13:58:37')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 6)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-03 13:58:37', `fullname` = 'test2' WHERE `id` = 5[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 5)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Completed in 2375ms (View: 31, DB: 203) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-03 20:59:10) [GET]
+  [4;35;1mUser Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 4703ms (View: 63, DB: 16) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-03 20:59:19) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mProject Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (31.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;35;1mMembership Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=6) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 6)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 5)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Completed in 2875ms (View: 15, DB: 203) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2010-06-03 20:59:26) [GET]
+  Parameters: {"id"=>"83109"}
+Rendering template within layouts/application
+Rendering projects/show
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Completed in 1437ms (View: 187, DB: 47) | 200 OK [http://localhost/projects/83109]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-03 21:00:00) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Completed in 781ms (View: 62, DB: 32) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-04 21:50:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 859ms (View: 843, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-04 21:52:31) [POST]
+  Parameters: {"authenticity_token"=>"G2ZQc5ny5gjck27ArT+LHm68lnU6q6K7/mCmgMTaBhs=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (187.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 5422ms (DB: 203) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-04 21:52:37) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (250.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Update (0.0ms)[0m   [0mUPDATE `projects` SET `last_activity_at` = '2010-06-04 12:19:49' WHERE `id` = 2[0m
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Delete all (94.0ms)[0m   [0mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mUser Columns (140.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;35;1mMembership Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `memberships`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;35;1mSQL (281.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=6) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 6)[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 5)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.0ms)[0m   [0;1mINSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(87642, 'test project', 0, 0, 1, 'Monday', NULL, 0, 10, 0, '2010-06-03 17:24:16', '0,1,2,3', 10, 'Average of 3 iterations', NULL, 0, NULL)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Delete all (0.0ms)[0m   [0;1mDELETE FROM `memberships` WHERE (project_id=3) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (94.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (15.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Owner', 4)[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 3)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 6)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 5)[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 5375ms (View: 47, DB: 1423) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-04 21:54:48) [GET]
+  [4;36;1mUser Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select (user_id from memberships where project_id in (select project_id from mem' at line 1: SELECT * FROM `users` WHERE (id in select (user_id from memberships where project_id in (select project_id from memberships where user_id=3))) [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select (user_id from memberships where project_id in (select project_id from mem' at line 1: SELECT * FROM `users` WHERE (id in select (user_id from memberships where project_id in (select project_id from memberships where user_id=3))) ):
+  app/controllers/users_controller.rb:8:in `index'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (46.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-04 21:55:26) [GET]
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mUser Load (63.0ms)[0m   [0mSELECT * FROM `users` WHERE (id in (select user_id from memberships where project_id in (select project_id from memberships where user_id=3))) [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 890ms (View: 62, DB: 125) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-04 21:55:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3771643) LIMIT 1[0m
+  [4;35;1mStory Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (47.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3771643, 'unstarted', 'feature 2', NULL, 87642, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3771643', NULL, '', -1, NULL, NULL, 'test2', '2010-06-03 13:20:44')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3776070) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3776070, 'unscheduled', 'bug 2', NULL, 87642, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3776070', NULL, '', NULL, NULL, NULL, 'test2', '2010-06-03 17:24:16')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 7812ms (View: 109, DB: 219) | 200 OK [http://localhost/users/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-04 21:55:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3771643) LIMIT 1[0m
+  [4;35;1mStory Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3776070) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 2781ms (View: 0, DB: 140) | 200 OK [http://localhost/users/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#move (for 127.0.0.1 at 2010-06-04 21:56:11) [POST]
+  Parameters: {"story"=>"3776070", "move"=>"before", "target"=>"3771643"}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid='3776070') LIMIT 1[0m
+  [4;35;1mStory Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mProject Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 87642) [0m
+
+NoMethodError (undefined method `pid' for nil:NilClass):
+  app/controllers/stories_controller.rb:44:in `move'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-04 22:11:35) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Columns (78.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 125ms (View: 47, DB: 78) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-04 22:11:40) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-04 22:11:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-04 22:11:57) [POST]
+  Parameters: {"authenticity_token"=>"SuATwCd9S5XVaBxJ/XdDlKZxXWwBAZ2NtKaaa2Ph0pk=", "password"=>"1234qwer", "email"=>"bhanuprasad143@gmail.com"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'bhanuprasad143@gmail.com' ) LIMIT 1[0m
+  [4;35;1mUser Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed in 1469ms (DB: 46) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2010-06-04 22:11:59) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Delete all (0.0ms)[0m   [0;1mDELETE FROM `memberships` WHERE (project_id=2) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mUser Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=4) LIMIT 1[0m
+  [4;36;1mMembership Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `memberships`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (15.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Owner', 4)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 3)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 6)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=2 and user_id=5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(2, 'Member', 5)[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Delete all (0.0ms)[0m   [0;1mDELETE FROM `memberships` WHERE (project_id=3) [0m
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='michaeloboyle@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'michaeloboyle@michaeloboyle.com' AND `users`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Owner', 4)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='bhanuprasad143@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'bhanuprasad143@gmail.com' AND `users`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (0.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 3)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email='test1@michaeloboyle.com') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test1@michaeloboyle.com' AND `users`.id <> 6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMembership Load (0.0ms)[0m   [0;1mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMembership Create (0.0ms)[0m   [0;1mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 6)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email='test2@michaeloboyle.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test2@michaeloboyle.com' AND `users`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMembership Load (16.0ms)[0m   [0mSELECT * FROM `memberships` WHERE (project_id=3 and user_id=5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembership Create (0.0ms)[0m   [0mINSERT INTO `memberships` (`project_id`, `role`, `user_id`) VALUES(3, 'Member', 5)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering projects/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 3422ms (View: 172, DB: 189) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-04 22:12:07) [GET]
+  [4;36;1mUser Columns (46.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;35;1mStory Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3700826, 'accepted', 'link people view to workload view', '2010-06-03 15:31:07', 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3700826', NULL, 'Clicking a person in people view should load workload view filter for clicked person.', 2, NULL, 'workload', 'Bhana Prasad', '2010-05-28 01:29:01')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3686413, 'accepted', 'setup help', '2010-06-03 15:31:30', 2, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3686413', NULL, 'log shows the following errors\nany idea what i might be doing wrong?\n\nProcessing SessionsController#new (for 174.54.113.241 at 2010-05-26 19:03:31) [GET]\nRendering template within layouts/application\nRendering sessions/new\nCompleted in 15ms (View: 12, DB: 2) | 200 OK [http://ec2-174-129-24-166.compute-1.amazonaws.com/]\n\n\nProcessing SessionsController#create (for 174.54.113.241 at 2010-05-26 19:03:36) [POST]\n Parameters: {\"authenticity_token\"=>\"SbYcKmj10qkYgvtk/9NhvSxbJGyDh8Di2gzx8wHTtps=\", \"password\"=>\"testpw\", \"email\"=>\"michaeloboyle@michaeloboyle.com\"}\nRedirected to http://ec2-174-129-24-166.compute-1.amazonaws.com/projects\nCompleted in 947ms (DB: 1) | 302 Found [http://ec2-174-129-24-166.compute-1.amazonaws.com/sessions]\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-26 19:03:37) [GET]\n\nActiveRecord::StatementInvalid (Mysql::Error: Duplicate entry \'0\' for key 1: INSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(65371, \'family to do list\', 0, 0, 1, \'Monday\', NULL, 0, 10, 0, \'2010-03-14 21:56:11\', \'0,1,2,3\', 10, \'Average of 3 iterations\', NULL, 0, NULL)):\n app/controllers/projects_controller.rb:32:in `index\'\n app/controllers/projects_controller.rb:10:in `each\'\n app/controllers/projects_controller.rb:10:in `index\'\n\nRendering /data/ptbarnum/releases/20100527020306/public/500.html (500 Internal Server Error)\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-26 19:03:40) [GET]\n\nActiveRecord::StatementInvalid (Mysql::Error: Duplicate entry \'0\' for key 1: INSERT INTO `projects` (`pid`, `name`, `bugs_and_chores_are_estimatable`, `commit_mode`, `iteration_length`, `week_start_day`, `account`, `public`, `current_velocity`, `allow_attachments`, `last_activity_at`, `point_scale`, `initial_velocity`, `velocity_scheme`, `number_of_done_iterations_to_show`, `use_https`, `labels`) VALUES(65371, \'family to do list\', 0, 0, 1, \'Monday\', NULL, 0, 10, 0, \'2010-03-14 21:56:11\', \'0,1,2,3\', 10, \'Average of 3 iterations\', NULL, 0, NULL)):\n app/controllers/projects_controller.rb:32:in `index\'\n app/controllers/projects_controller.rb:10:in `each\'\n app/controllers/projects_controller.rb:10:in `index\'\n\nRendering /data/ptbarnum/releases/20100527020306/public/500.html (500 Internal Server Error)\n', NULL, NULL, 'setup', 'Bhana Prasad', '2010-05-27 02:11:38')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3590648, 'delivered', 'create a mysql database for caching PT data', NULL, 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3590648', NULL, 'Data pulled from API should be cached in a mysql database for performance reasons.', 2, NULL, NULL, 'Bhana Prasad', '2010-05-19 15:05:37')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3643407, 'delivered', 'Refine Workload View Presentation', NULL, 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3643407', NULL, 'See attached mockup. Column head should be Project name.\n\nInspiration is taken from https://www.trackerstorymaps.com which may also be a reference for css styles and graphics.', 5, NULL, NULL, 'Bhana Prasad', '2010-05-24 15:05:57')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3704832, 'delivered', 'drag and drop stories', NULL, 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3704832', NULL, 'drag and drop stories to change priority. commit changes to pivotaltracker.com', 5, NULL, 'workload', 'Bhana Prasad', '2010-05-28 11:48:30')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3701235, 'delivered', 'support db migrations', NULL, 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3701235', NULL, 'Setup has proven challenging and I believe that with the right migrations in place, i can use the simple deploy and db:migrate functions built into the engineyard cloud admin tool rather than using ssh and running sql scripts direction.', 1, NULL, NULL, 'Bhana Prasad', '2010-05-28 02:52:14')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3719629, 'delivered', 'RestClient::Unauthorized (Unauthorized)?', NULL, 2, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3719629', NULL, 'Login form loads. Upon submitting login form, presented with:\nWe\'re sorry, but something went wrong.\nWe\'ve been notified about this issue and we\'ll take a look at it shortly.\n\nLog follows:\n\nProcessing SessionsController#new (for 174.54.113.241 at 2010-05-30 10:47:20) [GET]\nRendering template within layouts/application\nRendering sessions/new\nCompleted in 2ms (View: 2, DB: 0) | 200 OK [http://ec2-174-129-24-166.compute-1.amazonaws.com/]\n\n\nProcessing SessionsController#create (for 174.54.113.241 at 2010-05-30 10:47:25) [POST]\n Parameters: {\"authenticity_token\"=>\"O/qqSf5p3UEZvm/7YdW003m5VnFG1HO5X918RgvVdZQ=\", \"password\"=>\"xxx\", \"email\"=>\"michaeloboyle@michaeloboyle.com\"}\nRedirected to http://ec2-174-129-24-166.compute-1.amazonaws.com/projects\nCompleted in 930ms (DB: 0) | 302 Found [http://ec2-174-129-24-166.compute-1.amazonaws.com/sessions]\n\n\nProcessing ProjectsController#index (for 174.54.113.241 at 2010-05-30 10:47:26) [GET]\n\nRestClient::Unauthorized (Unauthorized):\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/abstract_response.rb:60:in `return!\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:204:in `process_result\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:153:in `transmit\'\n /usr/lib/ruby/1.8/net/http.rb:543:in `start\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:150:in `transmit\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:55:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/request.rb:30:in `execute\'\n /usr/lib/ruby/gems/1.8/gems/rest-client-1.4.2/lib/restclient/resource.rb:54:in `get\'\n lib/pivotal-tracker/project.rb:7:in `all\'\n app/controllers/projects_controller.rb:8:in `index\'\n\nRendering /data/ptbarnum/releases/20100530174219/public/500.html (500 Internal Server Error)\n', NULL, NULL, 'setup', 'Bhana Prasad', '2010-05-30 17:55:33')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3775983) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3775983, 'unstarted', 'use development instance to troubleshoot engineyard setup requirements', NULL, 2, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3775983', NULL, 'Now that I have it setup and available to you via ssh, please use development instance to troubleshoot engineyard setup requirements\n\nssh://development@ec2-184-73-167-250.compute-1.amazonaws.com\n\nIf you can get it working here, you can show me what you\'ve done and I can replicate in production.', -1, NULL, 'setup', 'Bhana Prasad', '2010-06-03 17:20:13')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3776266) LIMIT 1[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3776266, 'unstarted', 'people view should be restricted to people i\'m working with', NULL, 2, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3776266', NULL, 'Something has been puzzling me. Currently, the people view appears to show any person that ptbarnum has ever encountered. \n\nThis is contrary to the intended use of the system.\n\nWhile the system should know all of these people so that users are duplicated, the currently logged in user should only see users with whom they share project membership. Otherwise, when I open this up to the public, everyone will see everyone whether or not they know or work with them.', NULL, NULL, 'security', 'Bhana Prasad', '2010-06-03 17:37:09')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3771638) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3771638, 'unstarted', 'feature 1', NULL, 3, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3771638', NULL, '', -1, NULL, NULL, 'Bhana Prasad', '2010-06-03 13:20:23')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 6282ms (View: 110, DB: 156) | 200 OK [http://localhost/stories]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-04 22:12:19) [GET]
+  [4;36;1mUser Columns (47.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (id in (select user_id from memberships where project_id in (select project_id from memberships where user_id=3))) [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 1156ms (View: 31, DB: 47) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2010-06-04 22:12:24) [GET]
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3700826) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mProject Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mStory Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3686413) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3590648) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3643407) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3704832) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3701235) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3719629) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3775983) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3776266) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=83109) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3771638) LIMIT 1[0m
+  [4;36;1mProject Load (15.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering stories/index
+Completed in 3172ms (View: 16, DB: 155) | 200 OK [http://localhost/stories]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-04 22:12:34) [GET]
+  [4;35;1mUser Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (id in (select user_id from memberships where project_id in (select project_id from memberships where user_id=3))) [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 797ms (View: 16, DB: 63) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-04 22:12:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (62.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3771643) LIMIT 1[0m
+  [4;35;1mStory Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;35;1mProject Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3771643, 'unstarted', 'feature 2', NULL, 87642, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3771643', NULL, '', -1, NULL, NULL, 'test2', '2010-06-03 13:20:44')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3776070) LIMIT 1[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3776070, 'unscheduled', 'bug 2', NULL, 87642, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3776070', NULL, '', NULL, NULL, NULL, 'test2', '2010-06-03 17:24:16')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 2672ms (View: 16, DB: 156) | 200 OK [http://localhost/users/5]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#move (for 127.0.0.1 at 2010-06-04 22:12:56) [POST]
+  Parameters: {"story"=>"3776070", "move"=>"before", "target"=>"3771643"}
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid='3776070') LIMIT 1[0m
+  [4;36;1mStory Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mProject Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 87642) [0m
+
+NoMethodError (undefined method `pid' for nil:NilClass):
+  app/controllers/stories_controller.rb:46:in `move'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-04 22:16:19) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mStory Load (0.0ms)[0m   [0mSELECT * FROM `stories` WHERE (pid=3771643) LIMIT 1[0m
+  [4;36;1mStory Columns (110.0ms)[0m   [0;1mSHOW FIELDS FROM `stories`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mStory Create (0.0ms)[0m   [0;1mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3771643, 'unstarted', 'feature 2', NULL, 3, 'Michael J O\'Boyle', 'feature', 'http://www.pivotaltracker.com/story/show/3771643', NULL, '', -1, NULL, NULL, 'test2', '2010-06-03 13:20:44')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid=3776070) LIMIT 1[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (pid=87642) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStory Create (0.0ms)[0m   [0mINSERT INTO `stories` (`pid`, `current_state`, `name`, `accepted_at`, `project_id`, `requested_by`, `story_type`, `url`, `lighthouse_url`, `description`, `estimate`, `lighthouse_id`, `labels`, `owned_by`, `created_at`) VALUES(3776070, 'unscheduled', 'bug 2', NULL, 3, 'Michael J O\'Boyle', 'bug', 'http://www.pivotaltracker.com/story/show/3776070', NULL, '', NULL, NULL, NULL, 'test2', '2010-06-03 17:24:16')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Completed in 2875ms (View: 15, DB: 220) | 200 OK [http://localhost/users/5]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoriesController#move (for 127.0.0.1 at 2010-06-04 22:16:39) [POST]
+  Parameters: {"story"=>"3776070", "move"=>"before", "target"=>"3771643"}
+  [4;36;1mStory Load (0.0ms)[0m   [0;1mSELECT * FROM `stories` WHERE (pid='3776070') LIMIT 1[0m
+  [4;35;1mStory Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `stories`[0m
+  [4;36;1mProject Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 3) [0m
+Completed in 2797ms (View: 0, DB: 16) | 200 OK [http://localhost/stories/move?story=3776070&target=3771643&move=before]

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   # render new.rhtml
   before_filter :login_required
   def index
-    @users = User.find(:all)
+    @users = User.find(:all, :conditions=>["id in (select user_id from memberships where project_id in (select project_id from memberships where user_id=?))", current_user.id])
   end
   def show
     @user = User.find(params[:id])
@@ -22,7 +22,8 @@ class UsersController < ApplicationController
           if r_story.nil?
             r_story = Story.new  
           end
-          r_story.project_id = project.id
+          db_project = Project.find(:first, :conditions=>["pid=?", project.id])
+          r_story.project_id = db_project.id
           r_story.pid = story.id
           r_story.story_type = story.story_type
           r_story.url = story.url

@@ -17,7 +17,9 @@ class StoriesController < ApplicationController
         if r_story.nil?
           r_story = Story.new  
         end
-        r_story.project_id = project.id
+        #find project id
+        db_project = Project.find(:first, :conditions=>["pid=?", project.id])
+        r_story.project_id = db_project.id
         r_story.pid = story.id
         r_story.story_type = story.story_type
         r_story.url = story.url
