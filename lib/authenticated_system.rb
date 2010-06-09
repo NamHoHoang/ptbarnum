@@ -59,14 +59,14 @@ module AuthenticatedSystem
     #   skip_before_filter :login_required
     #
     def login_required
-      begin
-        projects = PivotalTracker::Project.all
+      #begin
+      #  projects = PivotalTracker::Project.all
         authorized? || access_denied
-      rescue
-        reset_session
-        PivotalTracker::Client.token=''
-        redirect_to new_session_path
-      end
+      #rescue
+      #  reset_session
+      #  PivotalTracker::Client.token=''
+      #  redirect_to new_session_path
+      #end
     end
 
     # Redirect as appropriate when an access request fails.
